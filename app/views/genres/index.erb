@@ -1,5 +1,19 @@
-<ul>
-  <% @genres.each do |genre| %>
-    <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
-  <% end %>
-</ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <% @genres.each do |genre| %>
+        <li><a href="/genres/<%= genre.slug %>"><%= genre.name %></a></li>
+      <% end %>
+    </ul>
+
+    <!-- <% Genre.all.each do |genre| %>
+      <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>">
+    <% end %> -->
+
+  </body>
+</html>
